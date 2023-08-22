@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Wheather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Totaro - Wheather</title>
 </head>
 <body>
-    <div class="bigcontainer">
-
+   
+    <header id="header">
         <div class="navbar">
-            <div class="name">totaro://html:css:javascript</div>
-            <ul>
-                <li><a href="https://totaro.github.io/weather/">Weather</a></li>
-                <li><a href="https://totaro.github.io/digitalclock/">Digital Clock</a></li>
-                <li><a href="https://totaro.github.io/randomphotogallery/">PhotoGallery</a></li>
-                <li><a href="https://totaro.github.io/dictionary/">Dictionary</a></li>
+            <div class="logo"><a href="">Totaro</a></div>
+            <ul class="links">
+                <li><a href="https://totaro.github.io/">Home</a></li>
+            <li><a href="https://totaro.github.io/weather/">Weather</a></li>
+            <li><a href="https://totaro.github.io/dictionary/">Dictionary</a></li>
+            <li><a href="https://totaro.github.io/randomphotogallery/">Photo Gallery</a></li>
+            <li><a href="https://totaro.github.io/digitalclock/">Digital Clock</a></li>
             </ul>
-    
-    
+            <a href="#" class="action_btn">Contact Me!</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
+
+        <div class="dropdown_menu">
+            <li><a href="https://totaro.github.io/">Home</a></li>
+            <li><a href="https://totaro.github.io/weather/">Weather</a></li>
+            <li><a href="https://totaro.github.io/dictionary/">Dictionary</a></li>
+            <li><a href="https://totaro.github.io/randomphotogallery/">Photo Gallery</a></li>
+            <li><a href="https://totaro.github.io/digitalclock/">Digital Clock</a></li>
+            <li><a href="#" class="action_btn">Contact Me!</a></li>
+
+
+        </div>
+    </header>
+    <main><section id="hero">
         <div class="container">
             <div class="heading">Weather<span class="headingspan"></span></div>
             <div class="search-box">
@@ -56,7 +73,8 @@
             </div>
     
         </div>
-    </div>
+    </section></main>
+    
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
         <script src="index.js"></script>
     

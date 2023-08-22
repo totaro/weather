@@ -22,7 +22,7 @@ fetch( `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&a
 .then(json => {
     
     if(json.cod === '404'){
-        container.style.height = '480px';
+        container.style.height = '490px';
         weatherBox.style.display = 'none';
         weatherDetails.style.display = 'none';
         error404.style.display = 'block';
@@ -79,7 +79,7 @@ fetch( `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&a
     searchedCity.style.display = '';
     weatherBox.classList.add('fadeIn');
     weatherDetails.classList.add('fadeIn');
-    container.style.height = '500px';
+    container.style.height = '510px';
 
 
 })
@@ -104,6 +104,33 @@ inputEl.addEventListener("keyup", (e)=>{
             fetchWeatherInfo();
         }
 })
+
+
+/* Header */
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function(){
+
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+}
+
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.scrollY >= sticky) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
 
